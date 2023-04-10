@@ -279,9 +279,10 @@ h6 {
   position: relative;
 }
 
-@media (min-width: 992px) {
+@media (max-width: 992px) {
   #hero {
-    padding-left: 160px;
+    background: url("../img/hero-mw.png") top right no-repeat;
+    background-size: 900px 1000px;
   }
 }
 
