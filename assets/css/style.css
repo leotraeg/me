@@ -1207,3 +1207,13 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+
+.carousel-indicators,
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1); /* Inverts white to black */
+}
+
+.carousel-inner {
+  max-height: 500px; /* Set a max height for the carousel */
+}
