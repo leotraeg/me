@@ -1,301 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Leo Traeger</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "light" || t === "dark") document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    })();
+  </script>
+  <title>Leonard Traeger</title>
+  <meta name="description" content="Leonard Traeger — Research Associate at Cologne University of Applied Sciences, working on data integration, schema matching, and language models for data management.">
+  <meta name="author" content="Leonard Traeger">
+  <link rel="canonical" href="https://leotraeg.github.io/me/">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Leonard Traeger">
+  <meta property="og:description" content="Leonard Traeger — Research Associate at Cologne University of Applied Sciences, working on data integration, schema matching, and language models for data management.">
+  <meta property="og:url" content="https://leotraeg.github.io/me/">
+  <meta property="og:image" content="https://leotraeg.github.io/me/assets/img/portrait-800.jpg">
+  <meta property="og:site_name" content="Leonard Traeger">
+  <meta property="profile:first_name" content="Leonard">
+  <meta property="profile:last_name" content="Traeger">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Leonard Traeger">
+  <meta name="twitter:description" content="Leonard Traeger — Research Associate at Cologne University of Applied Sciences, working on data integration, schema matching, and language models for data management.">
+  <meta name="twitter:image" content="https://leotraeg.github.io/me/assets/img/portrait-800.jpg">
+  <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link rel="stylesheet" href="assets/css/site.css">
 </head>
-
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="wrap">
+    <header class="site">
+      <a href="index.html" class="brand">Leonard Traeger</a>
+      <nav aria-label="Main">
+        <a href="index.html" aria-current="page">About</a>
+        <a href="publications.html">Publications</a>
+        <a href="teaching.html">Teaching</a>
+        <span class="nav-disabled" aria-disabled="true" title="Consulting — coming soon">Consulting</span>
+        <a href="assets/Leo_Traeger_CV.pdf">CV</a>
+        <button type="button" class="theme-toggle" aria-label="Toggle color theme" aria-pressed="false">
+          <svg class="theme-icon theme-icon--moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="theme-icon theme-icon--sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <line x1="12" y1="2" x2="12" y2="4"></line>
+            <line x1="12" y1="20" x2="12" y2="22"></line>
+            <line x1="4.93" y1="4.93" x2="6.34" y2="6.34"></line>
+            <line x1="17.66" y1="17.66" x2="19.07" y2="19.07"></line>
+            <line x1="2" y1="12" x2="4" y2="12"></line>
+            <line x1="20" y1="12" x2="22" y2="12"></line>
+            <line x1="4.93" y1="19.07" x2="6.34" y2="17.66"></line>
+            <line x1="17.66" y1="6.34" x2="19.07" y2="4.93"></line>
+          </svg>
+        </button>
+      </nav>
+    </header>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
-  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex flex-column justify-content-center">
-
-    <nav id="navbar" class="navbar nav-menu">
-      <ul>
-        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <!-- <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Skills</span></a></li> -->
-        <!-- <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>-->
-        <li><a href="#research" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Research</span></a></li>
-        <li><a href="#teaching" class="nav-link scrollto"><i class="bx bx-file-blank"></i><span>Teaching</span></a></li>
-        <li><a href="#funding" class="nav-link scrollto"><i class="bx bx-calendar-week"></i> <span>Funding</span></a></li>
-        
-      </ul>
-    </nav><!-- .nav-menu -->
-
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container" data-aos="zoom-in" data-aos-delay="50">
-      <h1>Leo Traeger</h1>
-      <p>I <span class="typed" data-typed-items="enjoy running; climbing; and playing chess, am interested in projects regarding data management and language models, am open for research collaborations!, teach Databases and Data Science (Python and R) classes, earned a PhD in Information Systems from UMBC"></span></p>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/leonard-traeger/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        <a href="mailto:leonard.traeger@umbc.edu" class="gmail">Mail</a>
-        <a href="https://drive.google.com/file/d/1W5PwYG6sOEmnX0SMqUPP8irQxeEEAWlV/view?usp=sharing" target="_blank" >CV</a>
-        <a href="https://scholar.google.com/citations?user=3il05uUAAAAJ" target="_blank">Google Scholar</a>
-      </div>
-    </div>
-  </section><!-- End Hero -->
-
-  <main id="main">
-
-    <!-- ======= Skills Section ======= -->
-    <!-- <section id="skills" class="skills section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Skills</h2>
-          <p>The value of data is in its complexity</p>
-        </div>
-        <div class="row skills-content">
-          <div class="col-lg-12">
-            <div class="progress">
-              <span class="skill">Machine learning with Python (numpy, pandas, pyplot, sns, sklearn, TensorFlow) <i class="val">100%</i></span>
-            <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-		   </div>
-		   <div class="col-lg-12">
-            <div class="progress">
-              <span class="skill">Backend (sqldeveloper, MySQL WB, HANA XS, SAP HANA Studio with ABAP OO, Cassandra)<i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-			</div>
-		   <div class="col-lg-12">
-						
-            <div class="progress">
-              <span class="skill">Frontend (HTML, CSS, JavaScript, SAP UI5, Bootstrap, Webserver Configuration + Hosting, Middleware)<i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-			</div>
-		   <div class="col-lg-12">
-			
-            <div class="progress">
-              <span class="skill">Matlab Mathworks Simulink (Block Coding)<i class="val">50%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>End Skills Section -->
-
-    <!-- ======= Research Section ======= -->
-    <section id="research" class="portfolio section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Research Projects</h2>
-          <!--<p>aaa</p>-->
-        </div>
-
-        <div class="row">
-          <p>(Ongoing) RACT: Retrieval Augmented Column-Table Learning for Multi-Table Schema Matching.
-          <b>Traeger, Leonard</b>; Enas Khwaileh; Behrend, Andreas; Karabatis, George. 
-          <a href="https://arxiv.org/abs/2606.07843" target="_blank">arXiv (Technical Report)</a>
-          <a href="https://github.com/leotraeg/RACT" target="_blank">GitHub</a></p>
-        </div>
-        <div class="row">
-          <p>(2026/07) TABERTA: A Language Model for Dataset Discovery. 
-          Enas Khwaileh; <b>Traeger, Leonard</b>; Albert, Gatt; Yannis, Velegrakis. 30th International Conference on Extending Database Technology (EDBT 2027)
-          <a href="https://doi.org/10.48786/edbt.2027.02" target="_blank">DOI:10.48786/edbt.2027.02</a> 
-          <a href="https://huggingface.co/EnasKhwaileh/TABERTA" target="_blank">HuggingFace</a>
+    <main id="main">
+      <section class="hero">
+        <div class="hero-text">
+          <h1 class="visually-hidden">Leonard Traeger</h1>
+          <p class="lede">
+            Research Associate in the Big Data Analytics group at
+            <a href="https://www.th-koeln.de/">Cologne University of Applied Sciences</a>.
+          </p>
+          <p class="bio">
+            I work on data integration and language models for schema matching and dataset discovery. I build these techniques
+            into open tools, benchmarks, and interactive systems, so that they are usable for
+            people working with heterogeneous data every day.
+          </p>
+          <p class="bio">
+            I received my PhD in Information Systems from the
+            <a href="https://informationsystems.umbc.edu/">University of Maryland, Baltimore County</a>
+            in 2026, advised by <a href="https://userpages.umbc.edu/~georgek/">George Karabatis</a>
+            and <a href="https://www.th-koeln.de/personen/andreas.behrend/">Andreas Behrend</a>.
+            Before that, I completed my M.Sc. and B.Sc. at
+            <a href="https://www.th-koeln.de/">Cologne University of Applied Sciences</a> and spent a
+            semester at <a href="https://www.mq.edu.au/">Macquarie University</a> in Sydney. Outside
+            academia, I spent three years as a data warehouse consultant at BWI, working on
+            large-scale data pipelines and dashboard systems for the German Armed Forces.
+          </p>
+          <p class="bio">
+            When I am not at a desk, you will probably find me hiking, traveling, and playing chess.
           </p>
         </div>
-        <div class="row">
-          <p>(2026/05) Scoper: Streamline Linkable Schemas for Matching. 
-          <b>Traeger, Leonard</b>; Behrend, Andreas; Karabatis, George. IEEE 42st International Conference on Data Engineering (ICDE Demo 2026)
-          Accepted 
-          <a href="https://thkoeln-icct-bigdataanalytics.github.io/DataIntegration/" target="_blank">Scoper (Live Application)</a> 
-          <a href="https://github.com/THKoeln-ICCT-BigDataAnalytics/DataIntegration" target="_blank">GitHub</a>
-          <a href="https://www.youtube.com/watch?v=4Df5S4_giWU" target="_blank">YouTube</a></p> 
-        </div>
-        <div class="row">
-          <p>(2025/07) Collaborative Scoping: Self-Supervised Linkability Assessment for Schema Matching. 
-          <b>Traeger, Leonard</b>; Behrend, Andreas; Karabatis, George. 29th International Conference on Extending Database Technology (EDBT 2026)
-          <a href="https://doi.org/10.48786/edbt.2026.03" target="_blank">DOI:10.48786/edbt.2026.03</a> 
-          <a href="https://github.com/leotraeg/CollaborativeScoping" target="_blank">GitHub</a></p> 
-        </div>
-        <div class="row">
-          <p>(2025/02) Collective Scoping: Streamlining Entity Sets Towards Efficient and Effective Entity Linkages. 
-          <b>Traeger, Leonard</b>; Behrend, Andreas; Karabatis, George. Springer Nature Computer Science Volume 6 (SNCS 2025)
-          <a href="https://doi.org/10.1007/s42979-025-03734-7" target="_blank">DOI:10.1007/s42979-025-03734-7</a>
-          <a href="https://github.com/leotraeg/scoping" target="_blank">GitHub</a></p> 
-        </div>
-        <div class="row">
-          <p>(2025/01) SEALM: Semantically Enriched Attributes with Language Models for Linkage Recommendation.
-          <b>Traeger, Leonard</b>; Behrend, Andreas; Karabatis, George. 27th International Conference on Enterprise Information Systems (ICEIS 2025)
-          <a href="http://dx.doi.org/10.5220/0013217700003929" target="_blank">DOI:10.5220/0013217700003929</a>
-          <a href="https://github.com/leotraeg/SEALM" target="_blank">GitHub</a></p> 
-        </div> 
-        <div class="row">
-          <p>(2024/04) Scoping: Towards Streamlined Entity Collections for Multi-Sourced Entity Resolution with Self-Supervised Agents. 
-          <b>Traeger, Leonard</b>; Behrend, Andreas; Karabatis, George. 26th International Conference on Enterprise Information Systems (ICEIS 2024)
-          <a href="https://iceis.scitevents.org/PreviousAwards.aspx#2024" target="_blank"><b>Best Paper Award</b></a>
-          <a href="http://dx.doi.org/10.5220/0012607500003690" target="_blank">DOI:10.5220/0012607500003690</a>
-          <a href="https://github.com/leotraeg/scoping" target="_blank">GitHub</a></p> 
-        </div>
-          <div class="row">
-            <p>(2023/07) Autonomous Object Detection and Landing with Parrot Rolling Spider in Matlab Simulink.
-        <b>Traeger, Leonard</b>; Omar Faruque. International Conference on Embedded Systems, Cyber-physical Systems & Applications (ESCS 2023)
-        <a href="https://doi.org/10.1109/CSCE60160.2023.00160" target="_blank">DOI:10.1109/CSCE60160.2023.00160</a>
-        <a href="https://github.com/leotraeg/DetectAndLandParrot" target="_blank">GitHub</a> 
-        <a href="https://youtu.be/IItrpmtE190" target="_blank">YouTube</a> </p> 
+
+        <aside class="hero-sidebar">
+          <picture>
+            <source type="image/webp" srcset="assets/img/portrait-400.webp 1x, assets/img/portrait-800.webp 2x">
+            <img class="hero-photo" src="assets/img/portrait-400.jpg"
+                 srcset="assets/img/portrait-400.jpg 1x, assets/img/portrait-800.jpg 2x"
+                 width="200" height="200" alt="Portrait of Leonard Traeger">
+          </picture>
+          <div class="hero-contact">
+            <p class="contact-address">Cologne, Germany</p>
+            <p class="contact-email">
+              <a href="mailto:leonard.traeger@th-koeln.de">leonard.traeger@th-koeln.de</a>
+            </p>
+            <ul class="id-strip" aria-label="Find me elsewhere">
+              <li><a href="https://scholar.google.com/citations?user=3il05uUAAAAJ">Scholar</a></li>
+              <li><a href="https://github.com/leotraeg">GitHub</a></li>
+              <li><a href="https://orcid.org/0009-0000-3039-0685">ORCID</a></li>
+              <li><a href="https://www.linkedin.com/in/leonard-traeger/">LinkedIn</a></li>
+              <li><a href="assets/Leo_Traeger_CV.pdf">CV</a></li>
+            </ul>
           </div>
-        <div class="row">
-        <p>(2022/12) Inteplato: Generating Mappings of Heterogeneous Relational Schemas using Unsupervised Learning. 
-          <b>Traeger, Leonard</b>; Behrend, Andreas; Karabatis, George. International Conference on Computational Science and Computational Intelligence (CSCI 2022)
-        <a href="http://dx.doi.org/10.1109/CSCI58124.2022.00083" target="_blank">DOI:10.1109/CSCI58124.2022.00083</a>
-        <a href="https://github.com/leotraeg/Inteplato" target="_blank">GitHub</a></p> 
+        </aside>
+      </section>
+
+      <section aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Selected projects</h2>
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>Scoper</h3>
+            <p class="project-venues">ICDE Demo 2026</p>
+            <p>
+              Linkability assessment for schema matching: an interactive demo of our "Collaborative Scoping" (EDBT 2026) paper to narrow large schema collections down to the tables and attributes that are actually worth (linkability)
+              matching.
+            </p>
+            <ul class="project-links">
+              <li><a href="https://thkoeln-icct-bigdataanalytics.github.io/DataIntegration/">Live app</a></li>
+              <li><a href="https://github.com/THKoeln-ICCT-BigDataAnalytics/DataIntegration">GitHub</a></li>
+              <li><a href="https://doi.org/10.1109/ICDE65706.2026.00319">Paper</a></li>
+              <li><a href="https://www.youtube.com/watch?v=4Df5S4_giWU">Video</a></li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <h3>RACT</h3>
+            <p class="project-venues">arXiv 2026 · Technical report</p>
+            <p>
+              Retrieval-augmented column–table learning for differently normalized multi-table schema matching,
+              combining language-models with a self-supervised framework for cross-schema host table inference.
+            </p>
+            <ul class="project-links">
+              <li><a href="https://arxiv.org/abs/2606.07843">Paper</a></li>
+              <li><a href="https://github.com/leotraeg/RACT">GitHub</a></li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <h3>TABERTA</h3>
+            <p class="project-venues">EDBT 2027</p>
+            <p>
+              A language model for dataset discovery, trained to encode tables in a way
+              to support nearest neighborhood retrieval using schema co-occurrence information across large scale repositories.
+            </p>
+            <ul class="project-links">
+              <li><a href="https://doi.org/10.48786/edbt.2027.02">Paper</a></li>
+              <li><a href="https://huggingface.co/EnasKhwaileh/TABERTA">Model</a></li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <h3>SEALM</h3>
+            <p class="project-venues">ICEIS 2025</p>
+            <p>
+              Semantically enriched attribute representations with generative language models to boost embedding similarities for schema matching across heterogeneous metadata privacy constraints.
+            </p>
+            <ul class="project-links">
+              <li><a href="http://dx.doi.org/10.5220/0013217700003929">Paper</a></li>
+              <li><a href="https://github.com/leotraeg/SEALM">GitHub</a></li>
+            </ul>
+          </article>
         </div>
-      </div>
-        
-    </section><!-- End Research Section -->
+      </section>
 
-            <!-- ======= Teaching Section ======= -->
-            <section id="teaching" class="resume">	
-		
-              <div class="container" data-aos="fade-up">
-                <div class="section-title">
-                  <h2>Teaching </h2>
-                  <p>Winter 2025/2026: Teaching Assistant for Databases I (Cologne UAS) </p>
-                  <p>Summer 2025: Teaching Assistant for Databases II (Cologne UAS) </p>
-                  <p>Spring 2025: Teaching Assistant for IS620 - Advanced Database Project (UMBC) </p>
-                  <p>Fall 2024: Teaching Assistant for IS620 - Advanced Database Project (UMBC) </p>
-                  <p><a href="I9PB-43021.html" target="_blank">Winter 2024/2025: Lecturer I9PB-43021 - Programming Data Science (Dortumund UAS)</a></h4></p>
-                  <p>Winter 2023/2024: Lecturer I9PB-43021 - Programming Data Science (Dortmund UAS)</h4></p>
-                  <p>Spring 2023: Teaching Assistant for IS420 - Database Application Development (UMBC)</p>
-                  <p>Fall 2022: Guest Lecture for IS722 - Systems and Information Integration (UMBC) on "Inteplato: Generating Mappings of Heterogeneous Relational Schemas"</p>
-                  <p>Fall 2022: Teaching Assistant for IS420 - Database Application Development (UMBC) </p>
-                  <p></p>
-                  <p></p>
-                  <p></p>
-                  <p></p>
-          
-                </div>
-                <!-- meetergo widget start -->
-                <!--<div id="meetergoId" style="min-width:330px;height:620px" class="meetergo-iframe" link="https://my.meetergo.com/leotraeg/is420"></div><script src="https://cdn.jsdelivr.net/gh/meetergo/meetergo-integration/dist/esbuild/browser.js"></script>
-                --><!-- meetergo widget end -->
-                </div>
-              </section>
+      <section aria-labelledby="news-heading">
+        <h2 id="news-heading">News</h2>
 
-        <!-- ======= Funding Section ======= -->
-        <section id="funding" class="resume">
-          <div class="container" data-aos="fade-up">
-    
-            <div class="section-title">
-              <h2>Grants</h2>
-              <!--<p>aaa</p>-->
-            </div>
-    
-            <div class="row">
-              <div class="col-lg-10">
-                <div class="resume-item pb-0">
-                  <h4><a href="https://daad.de/go/stipd57479681" target="_blank">DAAD HAW.International</a></h4>
-                  <h5>2025</h5>
-                  <p><em>Conference Travel Grant</em></p>
-                  <ul>
-                    <li>ICEIS 2025 in Porto (Portugal)</li>
-                  </ul>
-                </div>
-                <div class="resume-item pb-0">
-                  <h4><a href="https://gsa.umbc.edu/conference-grants/" target="_blank">UMBC Graduate Student Association</a></h4>
-                  <h5>2022</h5>
-                  <p><em>Conference Travel Grant</em></p>
-                  <ul>
-                    <li>CSCI 2022 in Las Vegas (USA)</li>
-                  </ul>
-                </div>
-                <div class="resume-item pb-0">
-				  <h4><a href="https://fulbright.de" target="_blank">Fulbright Germany</a></h4>
-                  <h4></h4>
-                  <h5>2021</h5>
-                  <p><em>Graduate Scholarship</em></p>
-                  <ul>
-                    <li>University of Maryland, Baltimore County (USA)</li>
-                  </ul>
-                </div>
-                <!--<div class="resume-item pb-0">
-                  <h4><a href="https://informationsystems.umbc.edu/" target="_blank">UMBC Information Systems Department</a></h4>
-                  <h5>2020</h5>
-                  <p><em>Graduate School Remote Enrollment (6 credits)</em></p>
-                  <ul>
-                    <li>University of Maryland, Baltimore County (USA)</li>
-                  </ul>
-                </div>-->
-                <div class="resume-item pb-0">
-                  <h4><a href="https://foerderverein-campus-gummersbach.de" target="_blank">Förderverein Gummersbach</a></h4>
-                  <h5>2017</h5>
-                  <p><em>Studies Abroad Travel Funds</em></p>
-                  <ul>
-                    <li>Macquarie University, Sydney (Australia)</li>
-                  </ul>
-                </div>
-                
-              </div>
-            </div>
-    
+        <div class="news-item">
+          <time datetime="2026-05">May 2026</time>
+          <div>
+            Defended my PhD dissertation,
+            <em>Collaborative Synthesis of Data Systems: Automated, Contextual, and Streamlined
+            Approaches Using Language Models</em>, at UMBC.
           </div>
-        </section>
-        <!-- End Funding Section -->
-		
+        </div>
 
+        <div class="news-item">
+          <time datetime="2026-05">May 2026</time>
+          <div>
+            <em>Scoper: Streamline Linkable Schemas for Matching</em> was accepted as a demo at
+            IEEE ICDE 2026.
+          </div>
+        </div>
 
-  </main><!-- End #main -->
+        <div class="news-item">
+          <time datetime="2026-04">April 2026</time>
+          <div>
+            <em>Collaborative Scoping: Self-Supervised Linkability Assessment for Schema
+            Matching</em> was accepted at EDBT 2026.
+          </div>
+        </div>
 
+        <div class="news-item">
+          <time datetime="2026-05">May 2026</time>
+          <div>
+            <a href="https://patents.google.com/patent/US12625877B2/en">US Patent 12,625,877 B2</a>
+            granted in 2026 for organizing data from different local schemas based on similarity
+            rankings, scoring, and signatures, with G. Karabatis and A. Behrend.
+          </div>
+        </div>
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+        <div class="news-item">
+          <time datetime="2024-04">April 2024</time>
+          <div>
+            <em>Scoping: Towards Streamlined Entity Collections for Multi-Sourced Entity
+            Resolution with Self-Supervised Agents</em> received the
+            <strong>Best Paper Award</strong> at ICEIS 2024.
+          </div>
+        </div>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+        <div class="news-item">
+          <time datetime="2023-07">July 2023</time>
+          <div>
+            Awarded <strong>Best Poster</strong> at the VLDB Summer School in Cluj-Napoca,
+            Romania.
+          </div>
+        </div>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+        <div class="news-item">
+          <time datetime="2021-09">September 2021</time>
+          <div>
+            Received a <a href="https://fulbright.de/">Fulbright Germany</a> graduate scholarship
+            to join the Information Systems department at UMBC.
+          </div>
+        </div>
+      </section>
 
+      <section aria-labelledby="awards-heading">
+        <h2 id="awards-heading">Awards &amp; grants</h2>
+
+        <div class="news-item">
+          <time datetime="2025">2025</time>
+          <div>
+            <span class="award-title">DAAD HAW.International travel grant</span>
+            <span class="award-note">Conference travel to ICEIS 2025 in Porto, Portugal.</span>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <time datetime="2024">2024</time>
+          <div>
+            <span class="award-title">Best Paper Award, ICEIS 2024</span>
+            <span class="award-note">For the paper on Scoping.</span>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <time datetime="2023">2023</time>
+          <div>
+            <span class="award-title">Best Poster, VLDB Summer School 2023</span>
+            <span class="award-note">Cluj-Napoca, Romania.</span>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <time datetime="2022">2022</time>
+          <div>
+            <span class="award-title">UMBC Graduate Student Association Travel Grant</span>
+            <span class="award-note">Conference travel to CSCI 2022 in Las Vegas, USA.</span>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <time datetime="2021">2021</time>
+          <div>
+            <span class="award-title"><a href="https://fulbright.de/">Fulbright Germany</a> Graduate Scholarship</span>
+            <span class="award-note">Graduate studies at the University of Maryland, Baltimore County.</span>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <time datetime="2017">2017</time>
+          <div>
+            <span class="award-title">Förderverein Gummersbach Study-Abroad Funds</span>
+            <span class="award-note">Exchange semester at Macquarie University, Sydney.</span>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="service-heading">
+        <h2 id="service-heading">Service</h2>
+
+        <div class="news-item">
+          <time>2022</time>
+          <div>
+            <span class="entry-type">Accreditation</span>
+            <span class="award-title">Reaccreditation auditor</span>
+            <span class="award-note">M.Sc. Digital Sciences programme, Cologne University of Applied Sciences.</span>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <time>2022</time>
+          <div>
+            <span class="entry-type">Committee</span>
+            <span class="award-title">Graduate Student Representative</span>
+            <span class="award-note">Tenure and Promotion Committee, University of Maryland, Baltimore County.</span>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="talks-heading">
+        <h2 id="talks-heading">Talks</h2>
+
+        <div class="news-item">
+          <time datetime="2026-10">Oct 2026</time>
+          <div>
+            <span class="entry-type">Symposium</span>
+            <a class="award-title" href="https://databaseday.de/2026/program/">TABERTA: A Language Model for Dataset Discovery</a>
+            <span class="award-note">Bavarian Database Day 2026, Munich · Session 3: AI, Data Integration &amp; Modeling</span>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <time datetime="2022-05">May 2022</time>
+          <div>
+            <span class="entry-type">Industry Talk</span>
+            <span class="award-title">Machine Learning for Data Integration</span>
+            <span class="award-note">Oracle industry speaker at DOAG 2022, Düsseldorf.</span>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <time>Fall 2022</time>
+          <div>
+            <span class="entry-type">Guest Lecture</span>
+            <span class="award-title">Inteplato: Generating Mappings of Heterogeneous Relational Schemas</span>
+            <span class="award-note">IS722 Systems and Information Integration, University of Maryland, Baltimore County.</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site">
+      <span>© 2026 Leonard Traeger</span>
+      <span>Built as a static site · <a href="https://github.com/leotraeg/me">Source on GitHub</a></span>
+    </footer>
+  </div>
+  <script src="assets/js/theme.js"></script>
 </body>
-
 </html>
